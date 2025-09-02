@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Form</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* Top Navigation Bar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .company-name {
+      font-size: 18px;
+    }
+
+    /* Centered Card */
+    .form-card {
+      width: 500px;
+      height: 500px;
+      background-color: white;
+      margin: 50px auto;
+      padding: 30px;
+     
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-card h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .gender-options {
+      display: flex;
+      gap: 10px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .submit-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <img src="https://tse4.mm.bing.net/th/id/OIP.47SNPXIuKaqjQZJyWi82qAHaHa?pid=Api&P=0&h=180" alt="">
+    <div class="company-name">Bus book app</div>
+  </div>
+
+  <!-- Form Card -->
+  <div class="form-card">
+    <h2>welcome to our Bus Booking Service</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div class="form-group">
+        <label>Gender:</label>
+        <div class="gender-options">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="other" /> Other</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="city">Select Your City:</label>
+        <select id="city" name="city">
+          <option value="">--Choose--</option>
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="bangalore">Bangalore</option>
+          <option value="kolkata">Kolkata</option>
+        </select>
+      </div>
+
+      <a href="assignment2cont.html">
+        <button type="submit" >book seat</button></a>
+    </form>
+  </div>
+
+</body>
+</html>
