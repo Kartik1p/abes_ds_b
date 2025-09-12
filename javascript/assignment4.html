@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flipkart Clone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f3f6;
+    }
+    .navbar {
+      background-color: #2874f0;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      justify-content: space-between;
+    }
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .navbar .search input {
+      width: 400px;
+      padding: 6px;
+      border: none;
+      border-radius: 2px;
+    }
+    .navbar .menu a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .category-bar {
+      background-color: white;
+      display: flex;
+      justify-content: space-around;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .category {
+      text-align: center;
+      font-size: 14px;
+    }
+    .category img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Flipkart</div>
+    <div class="search">
+      <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <div class="menu">
+      <a href="#"><i class="fa-solid fa-user"></i> Login</a>
+      <a href="#"><i class="fa-solid fa-shop"></i> Become a Seller</a>
+      <a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+    </div>
+  </div>
+
+  <div class="category-bar">
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/flap/80/80/image/29327f40e9c4d26b.png?q=100" alt="Grocery">
+      <div>Grocery</div>
+    </div>
+    <div class="category">
+      <img src="data:image/webp;base64,UklGRgALAABXRUJQVlA4IPQKAACQZwCdASp/AQABPp1MnkulpC0qJ3OZ+aATiWdu2SRQBjpzDk7N7MMK2qmvo1vFnL8BP7Dtv2H+POtdzT/cbhm0Z40adTVnRePPYB97NYF54ZDFwHosN/H6lSP7qU7iBrhhnFK4xxw0O0o5vCii9zLhDtvs3Ih6s42a7xFP4szTKQf4uJE+maEKp4flvip9nIxCsgwA4320B6tomX5ZvB5JbxrZQbvhpgnp3lGQyCoCbJOkWUJBoztd6OZB3qD90MtcpTvSEmCJkWhGoNberZr8zTaqGqjo1IntIVH7PpaDEw/tr13Qoj+VLzfk/lD0oFmml83sltU0FbfV8krLnOkqHCoHVLzUir4eL0nqEy5xlumuIEYtjAKh3i+9XWM1Z/HT2GgBejS+R5JopOUnUhQ+4ah+FZpnK9KdvxDJ4o6l/fULI8awoq4KcMzecMSt7adOYAKERgny59ZAwTsZinxn5Dx3vec+LxH7Nh2rs4c+3gD3SeFXOuak7Xj9CXf/vLLcOGUOeRDJNGnECmrw4Xn6H5L9g8q5N+06aFvJ9Cp9mEbBhSSy5aAktnt8GVf2c/7Hz6MDYtzROx+H1J8pTeryVe5vf2Vf5Y69KUrDvo7xi7oyDaAVknNbeeu5+h71uGUbJfAvXKK/cOg8BsMV1w8hC4XlsyLPRU1OAVIuXwcC3tv42VZNTkZBZGJ0PFdmG3sr+fEU/GUCQRdRBlEAvq4KBqUDVz/MUESUxuZOCnA7SKaruUG215Xzk8ev/Qx5QP0q07RonV9536Nix2Cy1195KjiXaFSI+W8+iZ8r9TXeLYYagFTaW00EvYqhDOUBs6iQ6yhSZCKjLAm83ftgvG7P82oW+3tD3/V6gGQ1+7M16y3IpW0jWB3DawDJ7PUG4aqsM7megf5L8nh0gwaRD5eRMxoO2dAcVTsdgDPrnCZ3Mfwcnspgp7zm/r23kLwe1/Xd8fa5syhiLLrXw4iuLOZgkYnxkPIhn+CrTvXOrtwG/f9Fc9n/Xfst1cnoRYq0iVbshvP0XNEajNxXXng9lZuEaFzYZZgjiG7N70J9dXn8ZY9V6kKoYsT0I1vWUoIWNxOwrcjJ8WlL9lOMezLrhcH/KHCLtEAA/urtVH87VsfZ9uT8yHTXLXdMuinlybvymPto6LG+9RNqHqBGJTsB4XCaxw96tOA8GrgyfRr029+zgK4L4gvadioIlF8Rc/TVZ9+KV3zVMuMwsNd993vFDiSQXjlHKrJ2CbpS9bdKJAOaQDCHwm3RQt3N4n5L0zKMdrqJim8Jkhni1YPZj4weoJs/yiswWa84M1eRMPfg35B/etHgwBa4we0Xm/5SpqMACUXQY80RVQ830jb7yNxJtFryB/TslhhTor7KtKGlNiDOpQGNsIIJGawTUSSRgZtL7tUg9vFxhUoQzFt1uTyRDP5LPU04Ygr181AFVfiKmAPecQs5eeurQHxFqjmBiyL7VHQi2UPMTQB3ApaUdke35kTZTDaaTWNGU2iPHBG1Nj4w9g4dE2Cf9C8XrzbOlMA05JSrPNiVwI1Rhd4eVAbGVtt5VNv4nbmdSZgOAErlzi+ApffTB2YKxiG0Ab33E1VRQPwr6362En08UuhfkOV1sMjXfKCY/+nMlqQllAAx3L318UumvAiP4XTfHeIf5jUOB4xE2ELESF5pql0z5NR8S1QLKbfgHvUvXfFok/gdgQUU7bnibY7eybi0um6Ak7SIFZWMfTKDGn4To/9dvpJpOrSkSoLz0sKUOar6X8VnUm94J2hTHdPIjID8KuG8ic3K5gyN4LEx+vQJWIECOlUidHIzA6RBAl+jIkCM0BjFh629iUr11kH8xIrZqU/60pZU4uZLOccYQfp6fEny5ATxvuhKxLD1lrNSzz/zCnIxrNMMj2UZu8F4dhHNyIDdhjhE1VFOAfcB74isRfCwGGCCV1oqGTDEWzOgVhS7LgH7W2R7FJ8MoGibisD2N4YCaAf13IgvXMRq5K7UkAP797LDRBoV6tHdpyyHpkSOyBWDLFhATFIhSFq3jvWkc4MHM9XzugQw1blJsMTDabchMaw8ugJ36BBugnCLg2zznHBEdVWtwp0D46dbx0Q2YQek5pEsYz7kwPXVeCWUykgfUEb8IQiNyCG3TF3INXWORx3qfq9zyYnG/EzlouLFZdpH7xFl49LW8X9jGFBNId1jqZYUuwceKv9pUckwGvwJrwmw98x64IMHl2NQTH3QX6S6d52MepMIJgOx8o8j+ZJlfrD7b+LOxUAxODLhzjdcTvsyiHqW+C1UueNJUX+mDQVFu1a7KAcPnchAQ4mMGGj0SyPLj5+euWyHO3/IXBkOp95oFaU5dpQhpK/iLoDBgWypV9RpHaBWloaKBoPxHcW73AZwm2oCfVH6tINib5BW70vYRHmtPMKLGGJuW4my069+vZUryPL+9hzIvJsJUUjvM0MpZepjDlzEHBMO1VMnntzOcUegPV5gl6oYEH0ae/J0bguP1blba2VUWwRw359hb7mR38Qh+WBth4dyMMn75mS9D4svyuTwl+CaXasX9n3QP10sWYJnGaRbN6HWLvBJF5hWRj+HOrXgYGqURAjSlhgUrKK55BvVjW2QyPWKYpjpa8Wh+tgxlUdUUmfa+D4UzT6lq88WvOqU9qGlZnEn5Fh5b8fBu4o6wXDomrCd+OR7mNItkYMOY4IAnawvYQfYbd+MEV0BjcQ064MzU/58TYdYkH9kAyqyQp0ikF8cY4XtXWeDV1HtxeioD0W4mHksvOqIlPl4cXevD4R4dtwOobEc/XNiSMjyVuRgopLbVf243cqkPe8Ew+RyS31m/P+hbR55u6MMlSVR+1plQ8DYlCvWXKBvquNfIS8x70BU6BVC9b0bZrvJ9xaLtSKlPKNxR6jbQ0tyLDMF7WKLiAtR3vBmvP/NRzEOWkHC+LjDydz9BNFXL+KOS4vOyyWfZpRLlYoHPf0+K0MJVgM1HwM0xttHSjmzwoC0TFIiiaJL4v36TtIpWGrezsEmnKcgOQXKpoN35XNNhV1fa/8IaKo04X61pPsYQXyFoBBEqfIUx7lvRsbL5+pgsvKWpgXqQcwryD88rpa/J0Zxm59BTRIUtNL5Lz71UZ0+HcrHefPKvcJsomYwGArBW4KeWkxROcuFmadCle0iJvZ3N2YMjmScq1mYYEhObRB2qM15vGnOyOruW+aGjcnUWEGpuoukWDcRQQfOVf+PqqZLAtzoD7oNKRKLIZSS99P2KH1rrecmBfi1qTNkZqG+w16+Qk5W2jFarfoJjwmDN6XVnKz18Uib1VIRIIelMp7X/9JYX6HJYsMbaPd6ZMjwvjhZWGGtwzLE9OG9YARWXLLGeptm5DBoJ6O0h51duDKqfyrwkt6gxSyU6T/v3Qg6PohB5P8IpeEyFJ0OdPqmyOdIiXfWlmtIT7b+bn6k8JuiDfMwRTvIXL6KgBNYkQdXhlDjCNj3QmGXzy9Pwi42v2gB7GWlFI3F2PPSJRvx2DZbvsJ8Jbb7KpRrHNeRkLRF68YBn6AJNSGw88VyZb6f3ebl5FEybUglwQvL295p2ioSSojH4ccmafmXTpRxkzK6KeK7Q7asD9v8/kDujhIoaU+E6RbZC7A3opJ6yb/NwaRlAJ0uNx28eGcQPhCrPcqzylusjfFK4EHe3/FbvOEqnma92TwAcmRjjYv8yyJVm3kIHv+w1MhnHgQGl7VkzuQK5601DCVerYHDKDuGds/SvHwgAA==" alt="Mobiles">
+      <div>Mobiles</div>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/flap/80/80/image/0d75b34f7d8fbcb3.png?q=100" alt="Fashion">
+      <div>Fashion</div>
+    </div>
+    <div class="category">
+      <img src="https://rukminim2.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100" alt="Electronics">
+      <div>Electronics</div>
+    </div>
+  </div>
+
+</body>
+</html>
