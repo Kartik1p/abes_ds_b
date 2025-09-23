@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Cards</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      border-radius: 8px;
+      width: 50%;
+    }
+    .student {
+      margin-bottom: 10px;
+      background-color: #f0f0f0;
+      padding: 5px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card" id="sameDept">
+      <h2>Same Department</h2>
+      <div id="sameDeptList"></div>
+    </div>
+    <div class="card" id="diffDept">
+      <h2>Different Departments</h2>
+      <div id="diffDeptList"></div>
+    </div>
+  </div>
+
+  <script>
+    const jsonData = {
+      students: [
+        { name: "kulveer", roll: "101", department: "Computer Science" },
+        { name: "Neeraj", roll: "102", department: "Computer Science" },
+        { name: "gyan", roll: "201", department: "Mechanical" },
+        { name: "mridul", roll: "301", department: "Electrical" },
+        { name: "nitin", roll: "103", department: "Computer Science" },
+        { name: "prinve", roll: "401", department: "Civil" }
+      ]
+    };
+
+    const referenceDept = "Computer Science";
+    const sameDeptList = document.getElementById("sameDeptList");
+    const diffDeptList = document.getElementById("diffDeptList");
+
+    jsonData.students.forEach(student => {
+      const studentDiv = document.createElement("div");
+      studentDiv.className = "student";
+      studentDiv.textContent = `${student.name} - ${student.roll} (${student.department})`;
+
+      if (student.department === referenceDept) {
+        sameDeptList.appendChild(studentDiv);
+      } else {
+        diffDeptList.appendChild(studentDiv);
+      }
+    });
+  </script>
+
+</body>
+</html>
