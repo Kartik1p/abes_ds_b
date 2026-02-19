@@ -6,7 +6,7 @@ const fileUrl = new URL('./index.html', import.meta.url);
 const server = http.createServer(async (req, res) => {
   try {
     const data = await readFile(fileUrl, 'utf8');
-    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' }); 
     res.end(data);
   } catch (err) {
     console.error('Read error:', err);
